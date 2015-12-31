@@ -15,5 +15,11 @@ RSpec.describe Zombie do
       expect { zombie = Zombie.new() }.to raise_error(ArgumentError)
     end
   end
+  
+  describe "#name" do 
+    it "returns the zombies name" do 
+      expect(@zombie.name).to eq("Name")
+    end
+  end
 
 end
