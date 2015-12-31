@@ -20,11 +20,21 @@ RSpec.describe Zombie do
     it "returns the zombies name" do 
       expect(@zombie.name).to eq("Name")
     end
+    
+    it "changes the zombies name" do 
+      expect(@zombie.name="Zed").to eq(@zombie.name)
+    end
   end
   
   describe "to_s" do 
     it "should return a string representation of the zombie object" do 
       expect(@zombie.to_s).to eq("Zombie named: #{@zombie.name}")
+    end
+  end
+  
+  describe "#eat" do 
+    it "eats the given parameter" do 
+      expect(@zombie.eat("cat")).to eq("#{@zombie.name} eats the cat")
     end
   end
 
