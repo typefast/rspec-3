@@ -1,0 +1,1 @@
+Rspec test practice on a zombie class.
