@@ -1,6 +1,6 @@
 require 'zombie'
 
-Rspec.describe Zombie do 
+RSpec.describe Zombie do 
   
   before :each do 
     @zombie = Zombie.new
